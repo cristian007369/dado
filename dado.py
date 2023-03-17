@@ -1,40 +1,57 @@
 # Programa sobre un dado de 6 caras
 
+import random
+
+
 print("---------------------------------------------")
 print("--------------------Dado---------------------")
 print("---------------------------------------------")
 
+
+
 #Input
 
-cara_dado=int(input("Ingrese el número de una de las caras del dado: "))
+cara_dado=random.randint(1,6)
 
 #Processing y output
 
 if cara_dado==6:
-    print("---------------------------------------------")
-    print("La cara opuesta es 1")
-    print("---------------------------------------------")
+    rta="la cara opuesta es 1"
 elif cara_dado==5:
-    print("---------------------------------------------")
-    print("La cara opuesta es 2")
-    print("---------------------------------------------")
+    rta="la cara opuesta es 2"
 elif cara_dado==4:
-    print("---------------------------------------------")
-    print("La cara opuesta es 3")
-    print("---------------------------------------------")
+    rta="la cara opuesta es 3"
 elif cara_dado==3:
-    print("---------------------------------------------")
-    print("La cara opuesta es 4")
-    print("---------------------------------------------")
+    rta="la cara opuesta es 4"
 elif cara_dado==2:
-    print("---------------------------------------------")
-    print("La cara opuesta es 5")
-    print("---------------------------------------------")
+    rta="la cara opuesta es 5"
 elif cara_dado==1:
-    print("---------------------------------------------")
-    print("La cara opuesta es 6")
-    print("---------------------------------------------")
+    rta="la cara opuesta es 6"
 else:
-    print("---------------------------------------------")
-    print("Entrada no valida")
-    print("---------------------------------------------")
+    rta="Entrada no valida"
+
+cara_dado1=random.randint(1,6)
+
+if cara_dado1==6:
+    rta1="la cara opuesta es 1"
+elif cara_dado1==5:
+    rta1="la cara opuesta es 2"
+elif cara_dado1==4:
+    rta1="la cara opuesta es 3"
+elif cara_dado1==3:
+    rta1="la cara opuesta es 4"
+elif cara_dado1==2:
+    rta1="la cara opuesta es 5"
+elif cara_dado1==1:
+    rta1="la cara opuesta es 6"
+else:
+    rta1="Entrada no valida"
+
+if cara_dado1==cara_dado:
+    par="Salio par"
+else:
+    par="No salio par"
+
+print("La cara del dado 1 es "+str(cara_dado)+" y "+rta)
+print("La cara del dado 2 es "+str(cara_dado1)+" y "+rta1)
+print(par)
